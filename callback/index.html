@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RaYzZzLab - Auth Callback</title>
+<meta name="description" content="Authentication callback page for the RaYzZzLab app. This page verifies callback links and is not intended for direct browsing.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="RaYzZzLab - Auth Callback">
+<meta property="og:description" content="Authentication callback page for the RaYzZzLab app. This page verifies callback links and is not intended for direct browsing.">
+<meta property="og:site_name" content="RaYzZzLab">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rayzzz-lab.github.io/callback">
+<meta property="og:image" content="https://rayzzz-lab.github.io/assets/og-image.png">
+<meta property="og:image:alt" content="RaYzZzLab - Development Lab logo/banner">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0a0a">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; connect-src 'self' https://*.supabase.co; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://rayzzz-lab.github.io/callback">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+<div class="stage">
+  <div class="statusbar">
+    <div class="id"><span class="dot live" id="statusDot"></span><span id="statusRoute">AUTH · REDIRECT</span></div>
+    <div id="clock">--:--:--</div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      <div class="eyebrow" id="eyebrow">Authentication</div>
+      <h1 id="panelTitle">Checking link...</h1>
+    </div>
+
+    <div class="content">
+      <p class="status-text" id="statusText" role="status" aria-live="polite">Please wait...</p>
+
+      <div id="actionContainer"></div>
+    </div>
+  </div>
+  <footer>Static site · No cookies · No external tracking</footer>
+</div>
+
+<script src="/assets/clock.js" defer></script>
+<script src="/assets/vendor/supabase.min.js" defer></script>
+<script src="/assets/supabase-config.js" defer></script>
+<script src="/assets/callback.js" defer></script>
+
+</body>
+</html>
